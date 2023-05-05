@@ -10,14 +10,13 @@
  */
 function enterClicked() {  
 
-  // declaring numbers variable
-  let numbers = "";
-  let counter = min;
-  
   // Collecting user min and max
   let min = parseInt(document.getElementById('min').value)
   let max = parseInt(document.getElementById('max').value)
   
+  // declaring numbers variable
+  let numbers = "";
+  let counter = min;
   
   //Display if user can enter the museum for free
   while (counter <= max) {
