@@ -1,12 +1,12 @@
 // Copyright (c) 2023 Santiago Hewett All rights reserved
 //
 // Created by: Santiago Hewett
-// Created on: April 2023
+// Created on: May 2023
 // This file contains the JS functions for index.html
 
 "use strict";
 /**
- * This function tells the user what they have to pay to get in to the museum
+ * This function tells the user what numbes ae in between their min and max
  */
 function enterClicked() {  
 
@@ -21,8 +21,8 @@ function enterClicked() {
   
   //Display if user can enter the museum for free
   while (counter <= max) {
-    numbers = numbers + counter + "<br>"
-    counter = counter + 1
+    numbers = numbers + counter + "<br>";
+    counter = counter +1;
   }
   
   // Display results back to user

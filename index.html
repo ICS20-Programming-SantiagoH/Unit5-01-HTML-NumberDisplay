@@ -4,7 +4,7 @@
     
     <!-- metadata -->
     <meta charset="utf-8" />
-    <meta name="description" content="Museum Admission" />
+    <meta name="description" content="The numbers in between" />
     <meta name="keywords" content="immaculata, ics2o" />
     <meta name="author" content="Santiago Hewett" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     
     <!-- Title -->
-    <title>Museum Admission</title>
+    <title>The numbers in between</title>
   </head>
   <body>
     
@@ -35,7 +35,7 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Museum Admission</span>
+          <span class="mdl-layout-title">The numbers in between</span>
         </div>
       </header>
       
@@ -48,19 +48,19 @@
       </main>
               
               <!-- Request -->
-              <h5>Enter your a minimum and maximum number</h5>
-              <!-- Numeric Textfield Minimum -->
-              <form action=" javascript: enterClicked()">
-                <label for="min">Entre a minimum number:</label>
-                <input type="number" name="min" id="min" placeholder="ex.6" step="1"><br><br>
-                
-                <!-- Numeric Textfield Maximum -->
+              <h5>Enter a minimum and maximum number</h5>
+              <!-- Numeric Textfield maximum -->
               <form action=" javascript: enterClicked()">
                 <label for="max">Entre a maximum number:</label>
                 <input type="number" name="max" id="max" placeholder="ex.9" step="1"><br><br>
                 
-                <input type="submit" value="Submit numbers">
                 
+                <!-- Numeric Textfield minimum -->
+                <label for="min">Entre a minimum number:</label>
+                <input type="number" name="min" id="min" placeholder="ex.6" step="1"><br><br>
+                <input type="submit" name="submit numbers" value="Submit numbers">
+
+              </form>
                 <!-- Answer display -->
                 <h4>
                   <div id="result"></div>
