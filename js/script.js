@@ -6,7 +6,7 @@
 
 "use strict";
 /**
- * This function tells the user what numbes ae in between their min and max
+ * This function tells the user what numbers are in between their min and max
  */
 function enterClicked() {  
 
@@ -14,16 +14,31 @@ function enterClicked() {
   let min = parseInt(document.getElementById('min').value)
   let max = parseInt(document.getElementById('max').value)
   
-  // declaring numbers variable
-  let numbers = "";
+  // declaring variables for message and counter
+  let message = "";
   let counter = min;
   
-  //Display if user can enter the museum for free
-  while (counter <= max) {
-    numbers = numbers + counter + "<br>";
-    counter = counter +1;
+  //if statement when user enter no min or max
+  
+  if (isNaN(min) || isNaN(max)){
+  message ="Please Enter a Min and/or Max"
+}
+  
+  //if statement when user enter invalid min
+  
+  else if (counter > max){
+    message ="Please enter a Min that is Less than the Max"
   }
   
-  // Display results back to user
-  document.getElementById('result').innerHTML = numbers
+  else {
+  //while statement for the number that will be displayed
+    while (counter <= max){
+//Number with line break
+      message = message + counter + ", "
+      //Add to counter
+      counter = counter + 1;
+    }
+  }
+// Display Results back to User
+document.getElementById("result").innerHTML = message
 }
